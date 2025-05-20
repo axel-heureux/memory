@@ -1,11 +1,12 @@
 function Card({ image, isFlipped, onClick }) {
   return (
-    <div className="card" onClick={onClick}>
-      {isFlipped ? (
-        <img src={image} alt="Carte" className="card-face" />
-      ) : (
-        <div className="card-back" />
-      )}
+    <div className={`card ${isFlipped ? 'flipped' : ''}`} onClick={onClick}>
+      <div className="card-inner">
+        <div className="card-face card-back"></div>
+        <div className="card-face card-front">
+          <img src={image} alt="Carte" />
+        </div>
+      </div>
     </div>
   );
 }

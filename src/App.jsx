@@ -6,8 +6,19 @@ import chien from './assets/chien.png';
 import chat from './assets/chat.png';
 import lapin from './assets/lapin.png';
 import grenouille from './assets/grenouille.png';
+import lion from './assets/lion.png';
+import panda from './assets/panda.png';
+import ours from './assets/ours.png';
+import renard from './assets/renard.png';
+import girafe from './assets/girafe.png';
+import singe from './assets/singe.png';
+import tigre from './assets/tigre.png';
+import zèbre from './assets/zebre.png';
 
-const images = [chien, chat, lapin, grenouille];
+
+const images = [chien, chat, lapin, grenouille,lion, panda, ours, renard,
+  girafe, singe, tigre, zèbre
+];
 
 const shuffleCards = () => {
   const doubled = [...images, ...images];
