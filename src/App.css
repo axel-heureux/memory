@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+  background: #1e1e1e;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.game {
+  padding: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  perspective: 600px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.card-back {
+  background-color: #555;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
